@@ -1,0 +1,14 @@
+.icon-fab{
+    font-size: 300%;
+    color: #25D366;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    object-fit: cover;
+    object-position: center 20%; /* Ajusta a posição da imagem */
+    overflow: hidden;
+}

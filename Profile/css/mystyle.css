@@ -1,0 +1,356 @@
+/* =========================================
+   ESTILOS ORIGINAIS
+========================================= */
+
+.icon-fab{
+    font-size: 300%;
+    color: #25D366;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    object-fit: cover;
+    object-position: center 20%;
+    overflow: hidden;
+}
+
+/* =========================================
+   DARK MODE MODERNO
+========================================= */
+
+:root {
+
+    /* LIGHT */
+
+    --bg-color: #ffffff;
+    --surface-color: #f8f9fa;
+    --text-color: #212529;
+    --muted-text: #6c757d;
+
+    --title-color: #343a40;
+
+    --primary-color: #4B6F93;
+    --primary-hover: #6f96bd;
+
+    --border-color: #dee2e6;
+
+    --navbar-bg: #4B6F93;
+
+    --icon-bg: #495057;
+    --icon-color: #ffffff;
+
+    --shadow-color: rgba(0,0,0,0.12);
+
+    --card-bg: #ffffff;
+
+    --transition-speed: 0.3s;
+}
+
+/* =========================================
+   DARK THEME
+========================================= */
+
+[data-theme="dark"] {
+
+    --bg-color: #0f1115;
+    --surface-color: #171a21;
+
+    --text-color: #d8d8d8;
+    --muted-text: #9ca3af;
+
+    --title-color: #ffffff;
+
+    --primary-color: #7aa2cf;
+    --primary-hover: #9cc0e2;
+
+    --border-color: #2b313c;
+
+    --navbar-bg: #12151b;
+
+    --icon-bg: #252b35;
+    --icon-color: #ffffff;
+
+    --shadow-color: rgba(0,0,0,0.35);
+
+    --card-bg: #181c24;
+}
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+
+    transition:
+        background-color var(--transition-speed) ease,
+        color var(--transition-speed) ease;
+}
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.resume-section {
+    background-color: var(--bg-color);
+
+    transition:
+        background-color var(--transition-speed) ease;
+}
+
+.resume-section-content,
+p,
+li,
+span,
+div {
+
+    transition:
+        color var(--transition-speed) ease,
+        background-color var(--transition-speed) ease;
+}
+
+/* =========================================
+   TITLES
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+
+    color: var(--title-color) !important;
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+p,
+li,
+span {
+
+    color: var(--text-color);
+}
+
+.subheading {
+
+    color: var(--muted-text) !important;
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+a {
+
+    color: var(--primary-color);
+
+    transition:
+        color var(--transition-speed) ease,
+        opacity var(--transition-speed) ease;
+}
+
+a:hover {
+
+    color: var(--primary-hover);
+    text-decoration: none;
+}
+
+/* =========================================
+   PRIMARY COLORS
+========================================= */
+
+.text-primary {
+
+    color: var(--primary-color) !important;
+}
+
+.bg-primary,
+#sideNav {
+
+    background-color: var(--navbar-bg) !important;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    transition:
+        background-color var(--transition-speed) ease,
+        box-shadow var(--transition-speed) ease;
+
+    box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+/* =========================================
+   HR
+========================================= */
+
+hr {
+
+    border-color: var(--border-color);
+}
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icon {
+
+    background-color: var(--icon-bg) !important;
+    color: var(--icon-color) !important;
+
+    transition:
+        background-color var(--transition-speed) ease,
+        transform 0.2s ease;
+}
+
+.social-icon:hover {
+
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   PROFILE IMAGE
+========================================= */
+
+.foto-perfil {
+
+    border: 2px solid var(--border-color);
+
+    transition:
+        border-color var(--transition-speed) ease,
+        transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+
+    transform: scale(1.03);
+}
+
+/* =========================================
+   THEME BUTTON
+========================================= */
+
+#theme-toggle {
+
+    position: fixed;
+
+    top: 20px;
+    right: 20px;
+
+    width: 52px;
+    height: 52px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--surface-color);
+    color: var(--title-color);
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    box-shadow: 0 4px 20px var(--shadow-color);
+
+    transition:
+        background-color var(--transition-speed) ease,
+        color var(--transition-speed) ease,
+        transform 0.2s ease,
+        box-shadow var(--transition-speed) ease;
+}
+
+#theme-toggle:hover {
+
+    transform: scale(1.08);
+}
+
+.theme-icon {
+
+    pointer-events: none;
+}
+
+/* =========================================
+   TABLES / FORMS / CARDS
+========================================= */
+
+.table,
+.card,
+.form-control {
+
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .table {
+
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-control {
+
+    background-color: #1d222b;
+    color: #ffffff;
+    border-color: #343b48;
+}
+
+[data-theme="dark"] .form-control:focus {
+
+    background-color: #1d222b;
+    color: #ffffff;
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+/* =========================================
+   TEXT SELECTION
+========================================= */
+
+::selection {
+
+    background: var(--primary-color);
+    color: white;
+}
